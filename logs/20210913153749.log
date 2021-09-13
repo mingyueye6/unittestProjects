@@ -1,0 +1,16 @@
+2021-09-13 15:37:49,884 test_case.py[line:30]INFO - 【开始执行测试用例：test_001】
+2021-09-13 15:37:49,885 test_case.py[line:40]INFO - 用例设置检查点：['$.data.goods=http://49.235.168.69:8000/goods/?format=json']
+2021-09-13 15:37:49,885 test_case.py[line:42]INFO - 请求url：http://49.235.168.69:8000/?format=json
+2021-09-13 15:37:49,885 test_case.py[line:43]INFO - 请求参数：None
+2021-09-13 15:37:49,974 test_case.py[line:46]INFO - 返回结果：None
+2021-09-13 15:37:49,975 test_case.py[line:30]INFO - 【开始执行测试用例：test_002】
+2021-09-13 15:37:49,976 test_case.py[line:40]INFO - 用例设置检查点：['$.data.count=52', '$.data.next=http://49.235.168.69:8000/goods/?format=json&page=2']
+2021-09-13 15:37:49,976 test_case.py[line:42]INFO - 请求url：http://49.235.168.69:8000/goods/?format=json
+2021-09-13 15:37:49,988 test_case.py[line:43]INFO - 请求参数：None
+2021-09-13 15:37:50,095 test_case.py[line:46]INFO - 返回结果：None
+2021-09-13 15:37:50,096 test_case.py[line:30]INFO - 【开始执行测试用例：test_003】
+2021-09-13 15:37:50,096 test_case.py[line:40]INFO - 用例设置检查点：['']
+2021-09-13 15:37:50,096 test_case.py[line:42]INFO - 请求url：http://49.235.168.69:8000/userfavs/
+2021-09-13 15:37:50,097 test_case.py[line:43]INFO - 请求参数：{'csrftoken': '09qw5mjj2he5JfoZhxqEum5DvTyMQthuaNxkURdTxwqtTnVTXYzHfhEVxm7pxt3s', 'sessionid': '41vkdimhz09fy4bzu7r8uzw2pbfmnfaw'}
+2021-09-13 15:37:50,180 test_case.py[line:46]INFO - 返回结果：None
+2021-09-13 15:37:50,180 test_case.py[line:66]INFO - 【测试结果：通过】

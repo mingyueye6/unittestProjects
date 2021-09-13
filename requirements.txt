@@ -1,0 +1,6 @@
+parameterized==0.8.1
+jsonpath==0.82
+PyMySQL==1.0.2
+xlrd==1.2.0
+requests==2.26.0
+openpyxl==3.0.8
