@@ -45,14 +45,14 @@ class TestCase(unittest.TestCase):
             res = r.run_method(method, url, data, headers)
             log.info("返回结果：%s" % res)
 
-            flag = None
+            flag = False
             if checkPoint:
                 c = checkPoint.split(",")
                 for i in range(0, len(c)):
                     checkPoint_dict = {}
-                    checkPoint_dict[c[i].split('=')[0]] = c[i].split('=')[1]
+                    checkPoint_dict[c[i].split('==')[0]] = c[i].split('==')[1]
                     # jsonpath方式获取检查点对应的返回数据
-                    list = jsonpath.jsonpath(res, c[i].split('=')[0])
+                    list = jsonpath.jsonpath(res, c[i].split('==')[0])
                     value = list[0]
                     check = checkPoint_dict[c[i].split('=')[0]]
                     log.info("检查点数据{}：{},返回数据：{}".format(i + 1, check, value))

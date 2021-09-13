@@ -1,20 +1,17 @@
 class IsInstance:
 
     def get_instance(self, value, check):
-        flag = None
+        flag = False
         if isinstance(value, str):
             if check == value:
                 flag = True
-            else:
-                flag = False
         elif isinstance(value, float):
             if value - float(check) == 0:
                 flag = True
-            else:
-                flag = False
         elif isinstance(value, int):
             if value - int(check) == 0:
                 flag = True
-            else:
-                flag = False
+        elif not value:
+            if str(value) == check:
+                flag = True
         return flag
